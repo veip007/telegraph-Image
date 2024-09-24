@@ -12,6 +12,20 @@ import Link from "next/link";
 import LoadingOverlay from "@/components/LoadingOverlay";
 
 
+// 在页面加载时提示输入密码
+window.onload = function() {
+    var password = prompt("请输入密码:");
+
+    // 检查密码是否正确
+    if (password !== "521024") {
+        // 如果密码不正确，跳转到404页面
+        window.location.href = "/404";
+    }
+};
+
+
+
+
 const LoginButton = ({ onClick, href, children }) => (
   <button
     onClick={onClick}
