@@ -12,16 +12,20 @@ import Link from "next/link";
 import LoadingOverlay from "@/components/LoadingOverlay";
 
 
-// 在页面加载时提示输入密码
 window.onload = function() {
-    var password = prompt("请输入密码:");
+    var passwordForm = document.getElementById('passwordForm');
+    passwordForm.style.display = 'block';
+};
 
-    // 检查密码是否正确
-    if (password !== "521024") {
-        // 如果密码不正确，跳转到404页面
+function checkPassword() {
+    var password = document.getElementById('passwordInput').value;
+    if (password === "521024") {
+        document.getElementById('passwordForm').style.display = 'none';
+    } else {
         window.location.href = "/404";
     }
-};
+}
+
 
 
 
