@@ -12,12 +12,6 @@ import Link from "next/link";
 import LoadingOverlay from "@/components/LoadingOverlay";
 
 
-
-
-
-
-
-
 const LoginButton = ({ onClick, href, children }) => (
   <button
     onClick={onClick}
