@@ -12,19 +12,7 @@ import Link from "next/link";
 import LoadingOverlay from "@/components/LoadingOverlay";
 
 
-window.onload = function() {
-    var passwordForm = document.getElementById('passwordForm');
-    passwordForm.style.display = 'block';
-};
 
-function checkPassword() {
-    var password = document.getElementById('passwordInput').value;
-    if (password === "521024") {
-        document.getElementById('passwordForm').style.display = 'none';
-    } else {
-        window.location.href = "/404";
-    }
-}
 
 
 
