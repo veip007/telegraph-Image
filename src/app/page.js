@@ -1,6 +1,6 @@
 
 window.onload = function() {
-    // 创建覆盖层
+
     var overlay = document.createElement('div');
     overlay.id = 'overlay';
     overlay.style.position = 'fixed';
