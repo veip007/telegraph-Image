@@ -1,4 +1,4 @@
-// 在页面加载时显示密码输入表单
+
 window.onload = function() {
     // 创建覆盖层
     var overlay = document.createElement('div');
@@ -14,7 +14,7 @@ window.onload = function() {
     overlay.style.alignItems = 'center';
     overlay.style.zIndex = '1000';
 
-    // 创建密码表单
+
     var passwordForm = document.createElement('div');
     passwordForm.id = 'passwordForm';
     passwordForm.style.textAlign = 'center';
@@ -42,13 +42,13 @@ window.onload = function() {
     overlay.appendChild(passwordForm);
     document.body.appendChild(overlay);
 
-    // 保留原有的 window.onload 事件处理程序
+
     if (typeof originalOnload === 'function') {
         originalOnload();
     }
 };
 
-// 保存原有的 window.onload 事件处理程序
+
 var originalOnload = window.onload;
 
 function checkPassword() {
@@ -59,8 +59,6 @@ function checkPassword() {
         window.location.href = "/404";
     }
 }
-
-
 
 
 
