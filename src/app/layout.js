@@ -20,10 +20,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>{children}</body>
       <GoogleAnalytics gaId="G-JVKEXR5XSG" />
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protected Page</title>
     <style>
         #overlay {
             position: fixed;
@@ -44,7 +40,6 @@ export default function RootLayout({ children }) {
             border-radius: 10px;
         }
     </style>
-</head>
 <body>
     <div id="overlay">
         <div id="passwordForm">
